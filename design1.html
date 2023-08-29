@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design #1</title>
+    <link rel="stylesheet" href="design1.css">
+    <link href="https://db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=CircularSpotifyTxT-Black" rel="stylesheet">
+
+    <script> 
+        function multiplyBy()
+        {
+          num1 = document.getElementById("firstMeasurement").value;
+          num2 = document.getElementById("secondMeasurement").value;
+          num3 = document.getElementById("thirdMeasurement").value;
+          
+          
+          document.getElementById("result1").innerHTML = num1 - num2;
+          document.getElementById("result2").innerHTML = Math.ceil(num2 * 1.42857142857);
+          document.getElementById("result3").innerHTML = Math.ceil(num2 * 1.42857142857) + 1;
+        }
+        
+    </script>
+
+</head>
+
+
+<body style= text-align:center>
+<div class="container">
+        <h1>Crotchet Calculator</h1>
+        
+    </div>
+
+    <div class="Backstory">
+        <p>
+            My sister and I both love to crotchet, and have begun to make projects for our freinds and family.
+            However, it has been difficult to accurately make our tops the right size as we cannot measure easily. 
+            So, I created this application with Javascript, HTML, and CSS to help us and any others easily know the 
+            perfect amount of stitches to guarantee the right fit.
+        </p>
+
+        <div class="column">
+            <h1>Input your measurements (in cm) for Design #1. Look at the images for reference. </h1>
+                <form>
+                Measurement 1 : <input type="text" id="firstMeasurement" /><br>
+                Measurement 2: <input type="text" id="secondMeasurement" /><br>
+                Measurement 3: <input type="text" id="thirdMeasurement" /><br>
+                <input type="button" onClick="multiplyBy()" Value="Calculate" /><br>
+                </form>
+ 
+            <p>The amount of layers for your cup is: <br>
+                <span id="result1"></span>
+            </p>
+ 
+
+             <p>The amount of stitches for your first cup chain is: <br>
+                <span id="result2"></span>
+            </p>
+
+            <p>The stitches for width of the top is:  <br>
+                <span id="result3"></span>
+            </p>
+
+        </div>
+
+
+        <div class="column">
+            <div class="container"
+                <p>  </p>
+                 <img alt = "Front of Top" class="mydesigns" src="top_front.png">
+                 <img alt = "Back of Top" class="mydesigns" src="back_top.png">
+        </div>
+    </div>
+
+       
+    
+ 
+</body>
+</html>

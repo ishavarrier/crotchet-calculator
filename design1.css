@@ -1,0 +1,18 @@
+body{
+    color: rgb(0, 0, 0);
+    font-family: "CircularSpotifyTxT-Black";
+    background-color: rgb(211, 230, 242);
+}
+
+.column {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.mydesigns{
+    width: 600px;
+    border: 5px;
+    border-color: black;
+
+}
